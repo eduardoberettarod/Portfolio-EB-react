@@ -1,0 +1,208 @@
+.logo-link {
+    position: fixed;
+    top: var(--margem-padraoY);
+    left: var(--margem-padraoX);
+    z-index: 20;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Botão hamburguer (3 barrinhas) */
+.hamburger-btn {
+    position: fixed;
+    top: var(--margem-padraoY);
+    right: var(--margem-padraoX);
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    /* escondido no desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    z-index: 30;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor-primaria);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Botão contato fixo no canto inferior direito */
+.nav-contato {
+    position: fixed;
+    right: var(--margem-padraoX);
+    bottom: var(--margem-padraoY);
+    z-index: 20;
+}
+
+.contato-btn {
+    text-decoration: none;
+    color: black;
+    font-family: 'titulo';
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1.5px solid var(--cor-segundaria);
+    background: var(--cor-primaria);
+    padding: 10px 50px 10px 20px;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 10;
+}
+
+.contato-btn::before {
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-135deg);
+    width: 20px;
+    height: 20px;
+    background: url("src/assets/svg/seta.svg") no-repeat center;
+    background-size: contain;
+    filter: brightness(0);
+}
+
+.contato-btn:hover {
+    filter: drop-shadow(0 0 15px var(--cor-primaria));
+    background: #8cffb2;
+}
+
+/* Desktop: menu visível e horizontal */
+@media (min-width: 768px) {
+        .nav-links {
+            position: fixed;
+            list-style: none;
+            margin-block: var(--margem-padraoY);
+            right: 50%;
+            transform: translateX(50%);
+            display: flex;
+            gap: 60px;
+            z-index: 10;
+            padding: 10px 20px 10px 20px;
+            border-radius: 10px;
+            background: transparent;
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+        }
+
+        .nav-link {
+            position: relative;
+            /* necessário para o ::after funcionar */
+            text-decoration: none;
+            color: white;
+            font-family: 'titulo';
+            font-size: 1rem;
+            z-index: 1;
+            transition: color 0.2s linear;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            /* distância da linha para o texto */
+            width: 0%;
+            height: 2px;
+            background-color: var(--cor-primaria);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--cor-primaria);
+            filter: drop-shadow(0 0 5px var(--cor-primaria));
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+            filter: drop-shadow(0 0 5px var(--cor-primaria));
+        }
+    }
+
+    /* Mobile: até 767px */
+    @media (max-width: 767px) {
+
+        /* Mostrar botão hambúrguer no mobile */
+        .hamburger-btn {
+            display: flex;
+            position: fixed;
+            right: 2rem;
+            top: 3rem;
+        }
+
+        /* Logo menor no mobile */
+        .logo {
+            width: 70px;
+            height: auto;
+            position: fixed;
+            left: 2rem;
+            top: 2rem;
+        }
+
+        /* Botão contato menor */
+        .contato-btn {
+            right: 2rem;
+            bottom: 2rem;
+            padding: 10px 30px 10px 10px;
+            font-size: 0.85rem;
+        }
+
+        .contato-btn::before {
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-135deg);
+            width: 15px;
+            height: 15px;
+            background: url("src/assets/svg/seta.svg") no-repeat center;
+            background-size: contain;
+            filter: brightness(0);
+        }
+
+        /* Menu fechado */
+        .nav-links {
+            display: none;
+            position: fixed;
+            top: -16.5px;
+            left: 0;
+            width: 100%;
+            height: 20%;
+            flex-direction: column;
+            gap: 20px;
+            background: #1f4023;
+            padding: 20px 0;
+            border-radius: 0 0 10px 10px;
+            z-index: 15;
+            list-style: none;
+        }
+
+        /* Menu aberto */
+        .nav-links.open {
+            display: flex;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-family: 'titulo';
+            font-size: 1.2rem;
+            padding: 0 20px;
+            transition: color 0.2s linear;
+        }
+
+        .nav-link:hover {
+            color: var(--cor-primaria);
+            filter: drop-shadow(0 0 5px var(--cor-primaria));
+        }
+    }
