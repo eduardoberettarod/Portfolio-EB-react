@@ -1,0 +1,242 @@
+.fundo-retangulo {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: transparent;
+    border: 5.5px solid var(--cor-primaria);
+    width: 96%;
+    height: 93%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.bola {
+    position: absolute;
+    width: 35%;
+    height: auto;
+    right: -5%;
+    bottom: 50%;
+    transform: translateY(50%);
+    filter: blur(70px);
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.cubo {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 30%;
+    z-index: 1;
+    animation: MEXE 6s ease-in-out infinite;
+}
+
+.fundo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+}
+
+@keyframes MEXE {
+    0% {
+        transform: translateY(50%) translateX(0);
+    }
+
+    20% {
+        transform: translateY(49.5%) translateX(0.8%);
+    }
+
+    40% {
+        transform: translateY(50.5%) translateX(0.4%);
+    }
+
+    60% {
+        transform: translateY(50.3%) translateX(-0.8%);
+    }
+
+    80% {
+        transform: translateY(49.7%) translateX(-0.3%);
+    }
+
+    100% {
+        transform: translateY(50%) translateX(0);
+    }
+}
+
+.scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--cor-segundaria);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    bottom: var(--margem-padraoY);
+    border: 1px solid var(--cor-primaria);
+    opacity: 0.4;
+    transition: 0.4s linear;
+    z-index: 2;
+}
+
+.scroll::before {
+    content: "";
+    display: block;
+    background-image: url("src/assets/svg/seta.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    animation: desceSobe 5s ease-in-out infinite;
+}
+
+@keyframes desceSobe {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translateY(6px);
+    }
+}
+
+
+.scroll p {
+    position: absolute;
+    left: 54%;
+    top: -95%;
+    font-size: 0.6rem;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'titulo';
+    letter-spacing: 0.2rem;
+}
+
+@media (max-width: 767px) {
+    .fundo-retangulo {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background: transparent;
+        border: 2.5px solid var(--cor-primaria);
+        width: 93%;
+        height: 96%;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    .cubo {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 40%;
+        transform: translateX(-50%);
+        /* posição inicial */
+        animation: MEXE-MOBILE 6s ease-in-out infinite;
+    }
+
+    .bola {
+        position: absolute;
+        width: 27%;
+        height: auto;
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(50px);
+        z-index: 1;
+        pointer-events: none;
+        opacity: 0.9;
+    }
+
+    @keyframes MEXE-MOBILE {
+        0% {
+            transform: translateX(-50%) translateY(0);
+        }
+
+        20% {
+            transform: translateX(-50%) translateY(-0.5%);
+        }
+
+        40% {
+            transform: translateX(-50%) translateY(0.5%);
+        }
+
+        60% {
+            transform: translateX(-50%) translateY(0.3%);
+        }
+
+        80% {
+            transform: translateX(-50%) translateY(-0.3%);
+        }
+
+        100% {
+            transform: translateX(-50%) translateY(0);
+        }
+    }
+
+    .scroll {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background: var(--cor-segundaria);
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        bottom: var(--margem-padraoY);
+        border: 1px solid var(--cor-primaria);
+        opacity: 0.4;
+        transition: 0.4s linear;
+        z-index: 2;
+    }
+
+    .scroll p {
+        position: absolute;
+        left: 54%;
+        top: -98%;
+        font-size: 0.55rem;
+        transform: translateX(-50%);
+        color: white;
+        font-family: 'titulo';
+        letter-spacing: 0.15rem;
+    }
+
+    .scroll::before {
+        content: "";
+        display: block;
+        background-image: url("src/assets/svg/seta.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 7px;
+        height: 7px;
+        background-size: contain;
+        animation: desceSobe 5s ease-in-out infinite;
+    }
+
+    @keyframes desceSobe {
+
+        0%,
+        100% {
+            transform: translate(-50%, -50%) translateY(0);
+        }
+
+        50% {
+            transform: translate(-50%, -50%) translateY(6px);
+        }
+    }
+}

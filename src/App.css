@@ -16,6 +16,10 @@ body {
 
 }
 
+section{
+  height: 100vh;
+}
+
 @font-face {
     font-family: 'titulo';
     src: url(src/assets/font/Orbitron-Regular.ttf);
@@ -26,153 +30,7 @@ body {
     src: url(src/assets/font/Lato-Regular.ttf);
 }
 
-.fundo-retangulo {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background: transparent;
-    border: 5.5px solid var(--cor-primaria);
-    width: 96%;
-    height: 93%;
-    z-index: -1;
-    pointer-events: none;
-}
-.bola {
-    position: absolute;
-    width: 35%;
-    height: auto;
-    right: -5%;
-    bottom: 50%;
-    transform: translateY(50%);
-    filter: blur(70px);
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.9;
-}
-
-.cubo {
-    position: absolute;
-    right: 0;
-    bottom: 50%;
-    transform: translateY(50%);
-    width: 30%;
-    z-index: 1;
-    animation: MEXE 6s ease-in-out infinite;
-}
-
-.fundo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-    pointer-events: none;
-}
-
-@keyframes MEXE {
-    0% {
-        transform: translateY(50%) translateX(0);
-    }
-
-    20% {
-        transform: translateY(49.5%) translateX(0.8%);
-    }
-
-    40% {
-        transform: translateY(50.5%) translateX(0.4%);
-    }
-
-    60% {
-        transform: translateY(50.3%) translateX(-0.8%);
-    }
-
-    80% {
-        transform: translateY(49.7%) translateX(-0.3%);
-    }
-
-    100% {
-        transform: translateY(50%) translateX(0);
-    }
-}
-.text-home {
-  position: absolute;
-  top: 50%; /* mais centralizado que 35% */
-  left: var(--margem-padraoX);
-  transform: translateY(-50%); /* centraliza de forma mais natural */
-  z-index: 2;
-}
-
-.subtitle {
-  font-family: 'titulo';
-  font-size: 3.5rem;
-  color: var(--cor-primaria);
-  margin: 0 0 1rem 0; /* margem inferior leve entre o p e o h1 */
-}
-
-.title {
-  font-family: 'titulo';
-  font-size: 6.5rem;
-  color: white;
-  margin: 0; /* zera a margem superior para não empurrar nada */
-}
 
 
 
-@media (max-width: 767px) {
-  .fundo-retangulo {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background: transparent;
-    border: 2.5px solid var(--cor-primaria);
-    width: 93%;
-    height: 96%;
-    z-index: -1;
-    pointer-events: none;
-  }
 
-  .cubo {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    width: 35%;
-    transform: translateX(-50%); /* posição inicial */
-    animation: MEXE-MOBILE 6s ease-in-out infinite;
-  }
-  .bola {
-    position: absolute;
-    width: 27%;
-    height: auto;
-    top: 22%;
-    left: 50%;
-    transform: translateX(-50%);
-    filter: blur(50px);
-    z-index: 1;
-    pointer-events: none;
-    opacity: 0.9;
-}
-
-  @keyframes MEXE-MOBILE {
-    0% {
-      transform: translateX(-50%) translateY(0);
-    }
-    20% {
-      transform: translateX(-50%) translateY(-0.5%);
-    }
-    40% {
-      transform: translateX(-50%) translateY(0.5%);
-    }
-    60% {
-      transform: translateX(-50%) translateY(0.3%);
-    }
-    80% {
-      transform: translateX(-50%) translateY(-0.3%);
-    }
-    100% {
-      transform: translateX(-50%) translateY(0);
-    }
-  }
-}

@@ -1,0 +1,56 @@
+.titulo-sobre {
+    font-family: 'titulo';
+    color: white;
+    text-align: justify;
+    font-size: 6.5rem;
+    margin-left: var(--margem-padraoX);
+}
+
+.card-sobre {
+    background: var(--bg-card);
+    border: 1px solid var(--borda-card);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    color: white;
+    max-width: 700px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: var(--margem-padraoY);
+    margin-left: var(--margem-padraoX);
+}
+
+.texto-sobre {
+    font-family: 'texto';
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .titulo-sobre {
+        font-family: 'titulo';
+        color: white;
+        text-align: justify;
+        font-size: 3.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .card-sobre {
+        position: relative;
+        background: var(--bg-card);
+        border: 1px solid var(--borda-card);
+        border-radius: 12px;
+        padding: 1rem 0.7rem;
+        color: white;
+        max-width: 330px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        margin-top: var(--margem-padraoY);
+        margin: var(--margem-padraoY) auto 0 auto;
+    }
+
+    .texto-sobre {
+        font-family: 'texto';
+        font-size: 1rem;
+        text-align: left;
+        line-height: 1.6;
+    }
+}

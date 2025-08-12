@@ -1,0 +1,68 @@
+.container-hand {
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    height: auto;
+    width: 50%;
+    right: -2.5%;
+    margin-block: 8%;
+    z-index: -2;
+    animation: PEGAR infinite 15s ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes PEGAR {
+    0% {
+        transform: translateY(0%) translateX(0%) rotate(0deg) scale(1);
+    }
+
+    40% {
+        transform: translateY(10%) translateX(5%) rotate(8deg) scale(0.98);
+    }
+
+    60% {
+        transform: translateY(12%) translateX(6%) rotate(10deg) scale(1.2);
+    }
+
+    100% {
+        transform: translateY(0%) translateX(0%) rotate(0deg) scale(1);
+    }
+}
+
+@media (max-width: 767px) {
+    .container-hand {
+        position: relative;
+    }
+
+    .hand {
+        position: absolute;
+        height: auto;
+        width: 35%;
+        right: 0;
+        margin-block: 100%;
+        z-index: -2;
+        animation: PEGAR infinite 15s ease-in-out;
+        transform-origin: center;
+    }
+
+    @keyframes PEGAR {
+        0% {
+            transform: translateX(0%)  scale(1);
+        }
+
+        40% {
+            transform: translateX(5%)  scale(0.98);
+        }
+
+        60% {
+            transform: translateX(6%)  scale(1.2);
+        }
+
+        100% {
+            transform: translateX(0%)  scale(1);
+        }
+    }
+
+}
