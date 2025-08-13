@@ -7,7 +7,7 @@
 
 .linha {
     position: absolute;
-    width: 110%;
+    width: 100%;
     top: -50%;
     left: 50%;
     transform: translateY(-20%) translateX(-50%);
@@ -39,6 +39,7 @@
     color: white;
     text-align: justify;
     font-size: 6.5rem;
+    margin-top: var(--margem-padraoY);
 }
 
 /* bloco geral de skills */
@@ -113,11 +114,12 @@
     }
 
     .servico-card {
-        width: 100% !important;
+        position: relative;
+        width: 100%;
         /* ocupa toda largura disponível */
         max-width: 100%;
-        /* sem limite máximo */
         padding: 1.5rem;
+        margin: 0 auto;
     }
 
     .servico-header h3 {
@@ -132,7 +134,7 @@
 
     /* Tecnologias */
     .icons-tecnologias {
-        gap: 1.5rem;
+        gap: 1.2rem;
     }
 
     .tecnologia-card {
@@ -156,5 +158,6 @@
         color: white;
         font-size: 2rem;
         margin-top: var(--margem-padraoY);
+        margin-bottom: 2rem;
     }
 }

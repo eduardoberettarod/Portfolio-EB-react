@@ -4,6 +4,7 @@
     text-align: justify;
     font-size: 6.5rem;
     margin-left: var(--margem-padraoX);
+    margin-top: var(--margem-padraoY);
 }
 
 .card-sobre {
@@ -41,7 +42,7 @@
         border-radius: 12px;
         padding: 1rem 0.7rem;
         color: white;
-        max-width: 370px;
+        max-width: 390px;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         margin-top: var(--margem-padraoY);
         margin: var(--margem-padraoY) auto 0 auto;

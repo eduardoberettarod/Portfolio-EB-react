@@ -85,7 +85,6 @@
 }
 
 .servico-card:hover {
-    transform: scale(1.03);
     background: rgba(255, 255, 255, 0.15);
 }
 
@@ -117,7 +116,7 @@
 .status.em-breve {
     background: rgba(250, 19, 19, 0.5);
     color: white;
-    width: 27.7%;
+    width: 31%;
     font-family: 'texto';
 }
 
