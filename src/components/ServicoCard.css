@@ -5,7 +5,7 @@
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 12px;
     padding: 2.5rem;
-    width: 350px;
+    width: 390px;
     /* mais largo que alto */
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@
 .status.em-breve {
     background: rgba(250, 19, 19, 0.5);
     color: white;
-    width: 21%;
+    width: 32.1%;
     font-family: 'texto';
 }
 
