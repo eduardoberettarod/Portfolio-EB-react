@@ -1,0 +1,63 @@
+.tecnologia-card {
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.tecnologia-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+/* ícones */
+.tecnologias {
+    width: 50px;
+    height: auto;
+    transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+    filter: invert(1);
+    opacity: 0.4;
+}
+
+.tecnologia-card:hover .tecnologias {
+    transform: scale(1.1);
+    opacity: 1;
+    filter: drop-shadow(0 0 5px var(--cor-primaria));
+}
+
+/* nome das tecnologias */
+.tecnologia-card span {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: 'texto';
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .tecnologia-card {
+        width: 65px; /* mantém o mesmo */
+        padding: 15px; /* mantém o mesmo */
+        margin-top: 0.5rem;
+    }
+
+    .tecnologias {
+        width: 25px; /* reduz ícone */
+    }
+
+    .tecnologia-card span {
+        font-size: 0.55rem; /* reduz texto */
+    }
+}

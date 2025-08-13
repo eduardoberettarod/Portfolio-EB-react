@@ -1,0 +1,151 @@
+/* seção serviços */
+.container-linha {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.linha {
+    position: absolute;
+    width: 110%;
+    top: -50%;
+    left: 50%;
+    transform: translateY(-20%) translateX(-50%);
+    filter: blur(5px);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+#serviços {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* ocupa ao menos a altura da tela */
+}
+
+.container-serviços {
+    flex: 1;
+    /* ocupa espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* título em cima, tecnologias embaixo */
+    margin-inline: var(--margem-padraoX);
+    margin-block: var(--margem-padraoY);
+}
+
+.titulo-serviços {
+    font-family: 'titulo';
+    color: white;
+    text-align: justify;
+    font-size: 6.5rem;
+}
+
+/* bloco geral de skills */
+.container-skills {
+    width: 100%;
+}
+
+/* bloco de tecnologias no final */
+.container-tecnologias {
+    text-align: center;
+}
+
+.container-tecnologias h2 {
+    margin-inline: var(--margem-padraoY);
+    font-family: 'titulo';
+    color: white;
+    font-size: 2rem;
+    margin-top: var(--margem-padraoY);
+}
+
+/* ícones lado a lado */
+.icons-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-servicos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+@media (max-width: 767px) {
+    /* Container linha e efeito visual já ok */
+
+    /* Seção serviços */
+    #serviços {
+        position: relative;
+        /* para posicionar background/elementos internos */
+        min-height: 100vh;
+        /* ocupa no mínimo uma tela */
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        /* cria espaço em cima, importante */
+    }
+
+    .container-serviços {
+        position: relative;
+        /* ou nem declare */
+        margin-inline: 1rem;
+        margin-top: 2rem;
+        /* um espaçamento normal */
+    }
+
+
+    .titulo-serviços {
+        font-size: 3.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .cards-servicos {
+        flex-direction: column;
+        /* empilha os cards */
+        gap: 1.5rem;
+        /* menos espaçamento vertical */
+        margin-top: 1.5rem;
+    }
+
+    .servico-card {
+        width: 100% !important;
+        /* ocupa toda largura disponível */
+        max-width: 100%;
+        /* sem limite máximo */
+        padding: 1.5rem;
+    }
+
+    .servico-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .status {
+        font-size: 0.75rem;
+        padding: 3px 6px;
+    }
+
+    /* Tecnologias */
+    .icons-tecnologias {
+        gap: 1.5rem;
+    }
+
+    .tecnologia-card {
+        width: 70px;
+        /* menor tamanho pra encaixar melhor */
+        padding: 10px;
+    }
+
+    .tecnologias {
+        width: 25px;
+        /* ícones menores */
+    }
+
+    .tecnologia-card span {
+        font-size: 0.7rem;
+    }
+}

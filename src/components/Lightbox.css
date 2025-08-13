@@ -66,7 +66,7 @@
 
 .btn-previa:hover {
     transform: scale(1.05);
-    background: #00e68a;
+    background: var(--cor-primaria)
 }
 
 .icon-previa {
@@ -128,4 +128,71 @@
     padding: 0;
     font-weight: bold;
     z-index: 10;
+}
+
+@media (max-width: 767px) {
+    .lightbox-caixa {
+        width: 95%;
+        max-width: 350px; /* Ajuste para tamanho ideal */
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .card-projeto {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        max-height: 85vh;
+        overflow-y: auto;
+    }
+
+    .col-esquerda,
+    .col-direita {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        padding: 0.4rem;
+    }
+
+    .col-esquerda img {
+        padding-top: 1rem;
+        max-width: 100%;
+        max-height: 150px;
+        height: auto;
+    }
+
+    .btn-previa {
+        font-size: 0.85rem;
+        padding: 0px 0px;
+        align-items: center;
+        width: 95%;
+        justify-content: center;
+    }
+
+    .icon-previa {
+        width: 16px;
+        height: 16px;
+        top: 50%;    
+        transform: translateY(-25%);
+    }
+
+    .info h2 {
+        font-size: 1rem;
+    }
+
+    .info h3 {
+        font-size: 0.95rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+
+    .fechar {
+        font-size: 22px;
+        top: 15px;
+        right: 15px;
+        height: auto;
+    }
 }

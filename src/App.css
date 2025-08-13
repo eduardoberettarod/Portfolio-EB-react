@@ -13,11 +13,22 @@
 body {
     background: var(--cor-fundo);
     overflow-x: hidden;
+    scrollbar-width: none;
 
 }
 
-section{
-  height: 100vh;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
 }
 
 @font-face {
@@ -29,8 +40,3 @@ section{
     font-family: 'texto';
     src: url(src/assets/font/Lato-Regular.ttf);
 }
-
-
-
-
-

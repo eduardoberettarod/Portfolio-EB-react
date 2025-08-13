@@ -115,3 +115,94 @@
 .projeto-img-wrapper:hover::after {
     opacity: 1;
 }
+
+@media (max-width: 767px) {
+    .projeto-item {
+        border-radius: 12px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        text-decoration: none;
+        max-width: 350px;
+        padding-top: 25px;
+        position: relative;
+    }
+
+    .projeto-item h2 {
+        position: relative;
+        color: var(--cor-primaria);
+        font-family: 'texto';
+        margin-block: 1.5rem;
+        font-size: 1.5rem;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .projeto-item p {
+        color: white;
+        font-family: 'texto';
+        text-align: left;
+        font-size: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .botao-fullscreen {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        width: 20px;
+        height: 20px;
+        background: url('src/assets/svg/full.svg') center/contain no-repeat;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        padding: 0;
+        filter: invert(79%) sepia(75%) saturate(746%) hue-rotate(78deg) brightness(103%) contrast(103%);
+    }
+
+    .ver-github {
+        position: absolute;
+        color: black;
+        width: 35%;
+        left: 1rem;
+        font-size: 0.85rem;
+        top: 88%;
+        text-decoration: none;
+        font-family: 'texto';
+        background: var(--cor-primaria);
+        padding: 8.5px 25px 8.5px 1px;
+        border-radius: 5px;
+        border: 1px solid var(--cor-segundaria);
+    }
+
+    .ver-github::before {
+        content: "";
+        position: absolute;
+        right: 15px;
+        width: 15px;
+        height: 15px;
+        background: url("src/assets/svg/github.svg") no-repeat center;
+        background-size: contain;
+    }
+
+    .projeto-img-wrapper {
+        position: relative;
+        display: inline-block;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .projeto-img-wrapper::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: url('src/assets/svg/display.svg') center/40px no-repeat;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 2;
+    }
+
+}
