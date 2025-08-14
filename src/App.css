@@ -14,8 +14,29 @@ body {
     background: var(--cor-fundo);
     overflow-x: hidden;
     scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor-primaria) transparent;
+}
 
+/* Scrollbar - Chrome, Edge e Safari */
+::-webkit-scrollbar {
+    width: 8px;
+    /* largura */
+}
 
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* fundo do trilho */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor-primaria);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc66;
+    /* cor ao passar o mouse */
 }
 
 *,
@@ -23,7 +44,8 @@ body {
 *::after {
     box-sizing: border-box;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
