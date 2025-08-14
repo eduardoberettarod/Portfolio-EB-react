@@ -6,7 +6,7 @@ function EfeitoV() {
         <>
             <div className="fundo-retangulo"></div>
             <div className="container-cubo">
-                <img src="./imgsbola-verde.png" alt="efeito de luz" className="bola" />
+                <img src="./imgs/bola-verde.png" alt="efeito de luz" className="bola" />
                 <img src="./svg/cubo.svg" alt="cubo" className="cubo" />
                 <img src="./svg/fundo-preto.svg" className="fundo" />
             </div>

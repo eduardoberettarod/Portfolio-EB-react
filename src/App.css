@@ -56,10 +56,10 @@ section {
 
 @font-face {
     font-family: 'titulo';
-    src: url(./font/Orbitron-Regular.ttf);
+    src: url(../font/Orbitron-Regular.ttf);
 }
 
 @font-face {
     font-family: 'texto';
-    src: url(./font/Lato-Regular.ttf);
+    src: url(../font/Lato-Regular.ttf);
 }
