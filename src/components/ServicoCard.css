@@ -67,7 +67,7 @@
 }
 
 .servico-card li::before {
-    content: url(src/assets/svg/check.svg);
+    content: url(public/svg/check.svg);
     position: absolute;
     left: 0;
     filter: invert(79%) sepia(75%) saturate(746%) hue-rotate(78deg) brightness(103%) contrast(103%);

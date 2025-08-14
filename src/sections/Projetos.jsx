@@ -6,7 +6,7 @@ import Lightbox from '../components/Lightbox.jsx';
 function Projetos() {
   const projetos = [
     {
-      img: "src/assets/imgs/cyberlab.png",
+      img: "public/imgs/cyberlab.png",
       alt: "projeto cyberlab",
       titulo: "CyberLab",
       github: "https://github.com/eduardoberettarod/CyberLab",
@@ -15,7 +15,7 @@ function Projetos() {
       descricao: "Plataforma educacional interativa sobre cibersegurança, com recursos 3D e animações avançadas."
     },
     {
-      img: "src/assets/imgs/rastro-urbano.png",
+      img: "public/imgs/rastro-urbano.png",
       alt: "projeto rastro-urbano",
       titulo: "Rastro Urbano",
       github: "https://github.com/eduardoberettarod/RastroUrbanoGitDesktop",
@@ -24,7 +24,7 @@ function Projetos() {
       descricao: "Loja virtual responsiva com design moderno e interações dinâmicas."
     },
     {
-      img: "src/assets/imgs/portfolio.png",
+      img: "public/imgs/portfolio.png",
       alt: "projeto portfolio",
       titulo: "Portfólio",
       github: "https://github.com/eduardoberettarod/Portfolio-EB",

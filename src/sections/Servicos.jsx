@@ -38,20 +38,20 @@ function Servicos() {
   ];
 
   const tecnologias = [
-    { src: 'src/assets/svg/bootstrap.svg', alt: 'Bootstrap', nome: 'Bootstrap' },
-    { src: 'src/assets/svg/html.svg', alt: 'HTML', nome: 'HTML' },
-    { src: 'src/assets/svg/css.svg', alt: 'CSS', nome: 'CSS' },
-    { src: 'src/assets/svg/github.svg', alt: 'GitHub', nome: 'GitHub' },
-    { src: 'src/assets/svg/javascript.svg', alt: 'JavaScript', nome: 'JavaScript' },
-    { src: 'src/assets/svg/python.svg', alt: 'Python', nome: 'Python' },
-    { src: 'src/assets/svg/react.svg', alt: 'React', nome: 'React' },
-    { src: 'src/assets/svg/git.svg', alt: 'Git', nome: 'Git' },
+    { src: 'public/svg/bootstrap.svg', alt: 'Bootstrap', nome: 'Bootstrap' },
+    { src: 'public/svg/html.svg', alt: 'HTML', nome: 'HTML' },
+    { src: 'public/svg/css.svg', alt: 'CSS', nome: 'CSS' },
+    { src: 'public/svg/github.svg', alt: 'GitHub', nome: 'GitHub' },
+    { src: 'public/svg/javascript.svg', alt: 'JavaScript', nome: 'JavaScript' },
+    { src: 'public/svg/python.svg', alt: 'Python', nome: 'Python' },
+    { src: 'public/svg/react.svg', alt: 'React', nome: 'React' },
+    { src: 'public/svg/git.svg', alt: 'Git', nome: 'Git' },
   ];
 
   return (
     <section id="serviços">
       <div className="container-linha">
-        <img className="linha" src="src/assets/svg/linha.svg" alt="efeito visual" />
+        <img className="linha" src="public/svg/linha.svg" alt="efeito visual" />
       </div>
 
       <div className="container-serviços">
