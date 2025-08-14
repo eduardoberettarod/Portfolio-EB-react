@@ -8,8 +8,8 @@ function Contato() {
   return (
     <section id="contato">
       <div className="container-corrente">
-        <img src="public/svg/corrente.svg" className="corrente" alt="corrente" />
-        <img src="public/svg/orbita.svg" className="orbita" alt="orbita" />
+        <img src="./svg/corrente.svg" className="corrente" alt="corrente" />
+        <img src="./svg/orbita.svg" className="orbita" alt="orbita" />
       </div>
 
       <TituloContato />

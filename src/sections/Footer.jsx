@@ -7,10 +7,10 @@ function Footer() {
         <p>&copy; 2025 Eduardo Beretta — Todos os direitos reservados.</p>
         <div className="footer-links">
           <a href="https://github.com/eduardoberettarod" target="_blank" rel="noreferrer">
-            <img src="public/svg/github.svg" alt="GitHub" />
+            <img src="./svg/github.svg" alt="GitHub" />
           </a>
           <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" rel="noreferrer">
-            <img src="public/svg/linkedin.svg" alt="LinkedIn" />
+            <img src="./svg/linkedin.svg" alt="LinkedIn" />
           </a>
         </div>
       </div>
