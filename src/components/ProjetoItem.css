@@ -39,7 +39,7 @@
     right: 1rem;
     width: 25px;
     height: 25px;
-    background: url('public/svg/full.svg') center/contain no-repeat;
+    background: url('./svg/full.svg') center/contain no-repeat;
     border: none;
     cursor: pointer;
     z-index: 99;
@@ -68,7 +68,7 @@
     right: 20px;
     width: 20px;
     height: 20px;
-    background: url("public/svg/github.svg") no-repeat center;
+    background: url("./svg/github.svg") no-repeat center;
     background-size: contain;
 }
 
@@ -102,7 +102,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url('public/svg/display.svg') center/50px no-repeat;
+    background: url('./svg/display.svg') center/50px no-repeat;
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: 2;
@@ -156,7 +156,7 @@
         right: 1rem;
         width: 20px;
         height: 20px;
-        background: url('public/svg/full.svg') center/contain no-repeat;
+        background: url('./svg/full.svg') center/contain no-repeat;
         border: none;
         cursor: pointer;
         z-index: 99;
@@ -186,7 +186,7 @@
         right: 15px;
         width: 15px;
         height: 15px;
-        background: url("public/svg/github.svg") no-repeat center;
+        background: url("./svg/github.svg") no-repeat center;
         background-size: contain;
     }
 
@@ -201,7 +201,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: url('public/svg/display.svg') center/40px no-repeat;
+        background: url('./svg/display.svg') center/40px no-repeat;
         opacity: 0;
         transition: opacity 0.3s ease;
         z-index: 2;

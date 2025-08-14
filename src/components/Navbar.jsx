@@ -18,7 +18,7 @@ function Navbar() {
         {/* Logo só aparece se o menu estiver fechado */}
         {!menuOpen && (
           <a href="index.html#home-page" className="logo-link">
-            <img src="public/svg/logo.svg" alt="Logo" className="logo" />
+            <img src="./svg/logo.svg" alt="Logo" className="logo" />
           </a>
         )}
 

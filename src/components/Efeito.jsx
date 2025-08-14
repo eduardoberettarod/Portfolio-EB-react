@@ -6,9 +6,9 @@ function EfeitoV() {
         <>
             <div className="fundo-retangulo"></div>
             <div className="container-cubo">
-                <img src="public/imgs/bola-verde.png" alt="efeito de luz" className="bola" />
-                <img src="public/svg/cubo.svg" alt="cubo" className="cubo" />
-                <img src="public/svg/fundo-preto.svg" className="fundo" />
+                <img src="./imgsbola-verde.png" alt="efeito de luz" className="bola" />
+                <img src="./svg/cubo.svg" alt="cubo" className="cubo" />
+                <img src="./svg/fundo-preto.svg" className="fundo" />
             </div>
             <div className="scroll">
                 <p>SCROLL</p>

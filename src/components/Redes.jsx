@@ -6,13 +6,13 @@ function Redes() {
     <>
     <div className="social-container">
       <a href="https://www.linkedin.com/in/eduardo-beretta-a597ba356/" target="_blank" className="social-link">
-        <img src="public/svg/linkedin.svg" alt="LinkedIn" className="social-icon" />
+        <img src="./svg/linkedin.svg" alt="LinkedIn" className="social-icon" />
       </a>
       <a href="https://github.com/eduardoberettarod" target="_blank" className="social-link">
-        <img src="public/svg/github.svg" alt="GitHub" className="social-icon" />
+        <img src="./svg/github.svg" alt="GitHub" className="social-icon" />
       </a>
-      <a href="pubpublic/cur/iculo.pdf" download="curriculo-eduardo-beretta.pdf" className="social-link">
-        <img src="public/svg/file-earmark-person-fill.svg" alt="Baixar Currículo" className="social-icon" />
+      <a href="./assets/curiculo.pdf" download="curriculo-eduardo-beretta.pdf" className="social-link">
+        <img src="./svg/file-earmark-person-fill.svg" alt="Baixar Currículo" className="social-icon" />
       </a>
     </div>
     </>

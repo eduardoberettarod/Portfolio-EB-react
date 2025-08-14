@@ -5,9 +5,9 @@ function HandImage() {
     <div className="container-hand">
       <picture>
         {/* Quando for até 767px, usa o hand2.svg */}
-        <source media="(max-width: 767px)" srcSet="public/svg/hand2.svg" />
+        <source media="(max-width: 767px)" srcSet="./svg/hand2.svg" />
         {/* Caso contrário, usa o hand.svg */}
-        <img src="public/svg/hand.svg" className="hand" alt="Mão" />
+        <img src="./svg/hand.svg" className="hand" alt="Mão" />
       </picture>
     </div>
   );

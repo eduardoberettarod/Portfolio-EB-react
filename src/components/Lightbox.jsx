@@ -12,7 +12,7 @@ function Lightbox({ projeto, fecharLightbox }) {
             <img id="lb-img" src={projeto.img} alt={projeto.alt} />
             <a id="lb-link" href={projeto.previewLink} target="_blank" rel="noreferrer" className="btn-previa">
               Prévia
-              <img src="public/svg/display.svg" alt="Ícone Prévia" className="icon-previa" />
+              <img src="./svg/display.svg" alt="Ícone Prévia" className="icon-previa" />
             </a>
           </div>
           <div className="col-direita">
