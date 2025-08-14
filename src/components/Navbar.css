@@ -67,7 +67,7 @@
     transform: translateY(-50%) rotate(-135deg);
     width: 20px;
     height: 20px;
-    background: url("./svg/seta.svg") no-repeat center;
+    background: url("../svg/seta.svg") no-repeat center;
     background-size: contain;
     filter: brightness(0);
 }
@@ -167,7 +167,7 @@
             transform: translateY(-50%) rotate(-135deg);
             width: 15px;
             height: 15px;
-            background: url("./svg/seta.svg") no-repeat center;
+            background: url("../svg/seta.svg") no-repeat center;
             background-size: contain;
             filter: brightness(0);
         }
