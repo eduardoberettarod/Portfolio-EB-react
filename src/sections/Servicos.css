@@ -89,6 +89,7 @@
         padding-bottom: 2rem;
         padding-top: 50rem;
         /* cria espaço em cima, importante */
+        z-index: -1;
     }
 
     .container-serviços {

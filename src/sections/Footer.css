@@ -3,7 +3,7 @@
     border-top: 1px solid var(--borda-card);
     padding: 1rem 0;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .footer-content {
@@ -36,4 +36,10 @@
 .footer-links a:hover {
     opacity: 1;
     filter: invert(79%) sepia(75%) saturate(746%) hue-rotate(78deg) brightness(103%) contrast(103%);
+}
+
+@media (max-width: 767px) {
+    .footer{
+        margin-top: 1rem;
+    }
 }

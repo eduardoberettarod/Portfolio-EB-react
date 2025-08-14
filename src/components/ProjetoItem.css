@@ -42,6 +42,7 @@
     background: url('src/assets/svg/full.svg') center/contain no-repeat;
     border: none;
     cursor: pointer;
+    z-index: 99;
     background-color: transparent;
     padding: 0;
     filter: invert(79%) sepia(75%) saturate(746%) hue-rotate(78deg) brightness(103%) contrast(103%);
@@ -158,6 +159,7 @@
         background: url('src/assets/svg/full.svg') center/contain no-repeat;
         border: none;
         cursor: pointer;
+        z-index: 99;
         background-color: transparent;
         padding: 0;
         filter: invert(79%) sepia(75%) saturate(746%) hue-rotate(78deg) brightness(103%) contrast(103%);
