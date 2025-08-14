@@ -1,0 +1,39 @@
+/* CardCV.css */
+
+/* Card base */
+.card-info {
+    background: var(--bg-card);
+    border: 1px solid var(--borda-card);
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    font-family: 'texto';
+}
+
+/* Título do card */
+.card-info h1 {
+    font-family: 'titulo';
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Botão de download */
+.btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--cor-primaria);
+    color: #111;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-download:hover {
+    background: #00cc66;
+}
+
+/* Ajuste específico para o card de CV */
+#cv {
+    width: max-content;
+}

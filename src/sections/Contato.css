@@ -1,0 +1,118 @@
+/* Contêiner principal da seção contato */
+#contato {
+    scrollbar-width: none;
+    max-height: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container das imagens decorativas (corrente e orbita) */
+.container-corrente {
+    position: relative;
+}
+
+.corrente {
+    position: absolute;
+    height: auto;
+    bottom: -900px;
+    width: 45%;
+    right: -17%;
+    opacity: 0.65;
+    filter: blur(1.5px);
+    pointer-events: none;
+}
+
+.orbita {
+    display: none;
+    width: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.65;
+    filter: blur(1.5px);
+    pointer-events: none;
+    bottom: -550px;
+}
+
+/* Container que envolve formulário e cards à direita */
+.container-contato {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* empilha em telas menores */
+    gap: 2rem;
+    /* espaçamento entre form e cards */
+    margin-inline: var(--margem-padraoX);
+    margin-block: var(--margem-padraoY);
+}
+
+/* Cards laterais (Redes e CV) */
+.cards-lado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    max-width: 300px;
+    align-self: flex-end;
+    /* alinha no topo do formulário */
+}
+
+@media (max-width: 767px) {
+
+    /* Contêiner principal da seção contato */
+    #contato {
+        position: relative;
+        margin-top: 80rem;
+    }
+
+    /* Container das imagens decorativas (corrente e orbita) */
+    .container-corrente {
+        position: relative;
+    }
+
+    .corrente {
+        position: absolute;
+        left: -50%;
+        transform: translate(50%);
+        height: auto;
+        bottom: -600px;
+        width: 410px;
+        right: -17%;
+        opacity: 0.65;
+        filter: blur(1.5px);
+        pointer-events: none;
+
+    }
+
+    .orbita {
+        display: block;
+        width: 15%;
+        position: absolute;
+        left: 85%;
+        pointer-events: none;
+        bottom: -75px;
+    }
+
+    /* Container que envolve formulário e cards à direita */
+    .container-contato {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        /* empilha em telas menores */
+        gap: rem;
+        /* espaçamento entre form e cards */
+        margin-inline: 0;
+        margin-block: var(--margem-padraoY);
+    }
+
+    /* Cards laterais (Redes e CV) */
+    .cards-lado {
+        flex-direction: row;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+
+
+}

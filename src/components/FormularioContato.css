@@ -1,0 +1,152 @@
+/* FormularioContato.css */
+
+/* Card do formulário */
+.card-form {
+    background: var(--bg-card);
+    border: 1px solid var(--borda-card);
+    border-radius: 16px;
+    padding: 25px;
+    width: 400px;
+    backdrop-filter: blur(6px);
+}
+
+/* Título do card */
+.card-form h1 {
+    color: white;
+    font-family: 'titulo';
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+/* Labels do formulário */
+.card-form label {
+    display: block;
+    color: white;
+    font-family: 'texto';
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/* Inputs e textarea */
+.card-form input,
+.card-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid var(--borda-card);
+    background: transparent;
+    color: white;
+    font-family: 'texto';
+    font-size: 0.9rem;
+}
+
+.card-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Foco nos inputs */
+.card-form input:focus,
+.card-form textarea:focus {
+    outline: none;
+    border: 1px solid var(--cor-primaria);
+}
+
+/* Botão de envio */
+.card-form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background: var(--cor-primaria);
+    color: black;
+    font-family: 'texto';
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 1rem;
+}
+
+.card-form button:hover {
+    background: #4dff887c;
+}
+
+@media (max-width: 767px) {
+    /* FormularioContato.css */
+
+    /* Card do formulário */
+    .card-form {
+        max-width: 390px;
+        margin: 0 auto;
+    }
+
+    /* Título do card */
+    .card-form h1 {
+        color: white;
+        font-family: 'titulo';
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    /* Labels do formulário */
+    .card-form label {
+        display: block;
+        color: white;
+        font-family: 'texto';
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* Inputs e textarea */
+    .card-form input,
+    .card-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 8px;
+        border: 1px solid var(--borda-card);
+        background: transparent;
+        color: white;
+        font-family: 'texto';
+        font-size: 0.9rem;
+    }
+
+    .card-form textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    /* Foco nos inputs */
+    .card-form input:focus,
+    .card-form textarea:focus {
+        outline: none;
+        border: 1px solid var(--cor-primaria);
+    }
+
+    /* Botão de envio */
+    .card-form button {
+        width: 100%;
+        margin-top: 15px;
+        padding: 12px;
+        background: var(--cor-primaria);
+        color: black;
+        font-family: 'texto';
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        font-size: 1rem;
+    }
+
+    .card-form button:hover {
+        background: #4dff887c;
+    }
+
+}

@@ -1,0 +1,36 @@
+/* RedesSociais.css */
+
+/* Título das redes */
+.redes-contato {
+    color: white;
+    font-family: 'titulo';
+    margin-bottom: 1rem;
+}
+
+/* Container dos ícones */
+.redes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Estilo das imagens das redes */
+.redes img {
+    width: 30px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.redes img:hover {
+    opacity: 1;
+    filter: drop-shadow(0 0 5px var(--cor-primaria));
+}
+
+/* Links das redes */
+.redes a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    transition: 0.2s;
+}
