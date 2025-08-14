@@ -1,4 +1,5 @@
 import './HandImage.css';
+import '../assets/svg/hand.svg';
 
 function HandImage() {
   return (
