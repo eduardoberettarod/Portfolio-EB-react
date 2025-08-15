@@ -18,6 +18,9 @@
 .tecnologia-card:hover {
     background: rgba(255, 255, 255, 0.15);
     transform: scale(1.05);
+    border: 1px solid var(--cor-primaria);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
 }
 
 /* ícones */
@@ -48,16 +51,20 @@
 /* Responsividade */
 @media (max-width: 767px) {
     .tecnologia-card {
-        width: 65px; /* mantém o mesmo */
-        padding: 15px; /* mantém o mesmo */
+        width: 65px;
+        /* mantém o mesmo */
+        padding: 15px;
+        /* mantém o mesmo */
         margin-top: 0.5rem;
     }
 
     .tecnologias {
-        width: 25px; /* reduz ícone */
+        width: 25px;
+        /* reduz ícone */
     }
 
     .tecnologia-card span {
-        font-size: 0.55rem; /* reduz texto */
+        font-size: 0.55rem;
+        /* reduz texto */
     }
 }
