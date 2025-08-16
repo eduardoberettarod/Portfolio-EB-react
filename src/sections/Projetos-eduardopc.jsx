@@ -27,10 +27,19 @@ function Projetos() {
       img: "./imgs/portfolio.png",
       alt: "projeto portfolio",
       titulo: "Portfólio",
-      github: "https://github.com/eduardoberettarod/Portfolio-EB",
-      previewLink: "https://github.com/eduardoberettarod/Portfolio-EB",
+      github: "https://github.com/eduardoberettarod/Portfolio-EB-react",
+      previewLink: "https://portfolio-eb-react.vercel.app/",
       mesAno: "Agosto 2025",
       descricao: "Site responsivo para apresentar meus projetos, construído com React e Bootstrap."
+    },
+    {
+      img: "./imgs/pokemon.png",
+      alt: "Captura de tela da Pokédex, mostrando uma lista de Pokémon com suas imagens, nomes e tipos.",
+      titulo: "Pokédex Simples",
+      github: "https://github.com/eduardoberettarod/aula-react-pokemon",
+      previewLink: "https://aula-react-pokemon.vercel.app/",
+      mesAno: "Agosto 2025",
+      descricao: "Aplicação web em React que exibe uma lista de Pokémon com números, nomes, tipos e imagens oficiais da PokéAPI, com design responsivo para celulares e desktops."
     }
   ];
 
