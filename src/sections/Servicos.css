@@ -20,6 +20,8 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    margin-top: 30rem;
     /* ocupa ao menos a altura da tela */
 }
 
