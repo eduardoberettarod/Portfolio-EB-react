@@ -7,6 +7,7 @@
     border-radius: 16px;
     padding: 25px;
     width: 400px;
+    -webkit-backdrop-filter: blur(6px);
     backdrop-filter: blur(6px);
 }
 
